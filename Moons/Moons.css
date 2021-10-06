@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-image: url(image/original.gif);
+    background-size: cover;
+}
+::selection{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+* {
+    box-sizing: border-box;
+}
+.home,
+.stars,
+.planets,
+.moons,
+.asteroids {
+    background-color: rgba(128, 128, 128, 0.678);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 150%;
+    width: 10%;
+    text-align: center;
+}
+.home:hover,
+.stars:hover,
+.asteroids:hover,
+.planets:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
+.home {
+    right: 45%;
+    top: 5%;
+
+}
+.stars {
+    right: 34%;
+    top: 5%;
+
+}
+.planets {
+    right: 23%;
+    top: 5%;
+
+}
+.moons {
+    right: 12%;
+    top: 5%;
+        background: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
+.asteroids {
+    right: 1%;
+    top: 5%;
+}
+
+.addres {
+    font-size: 80px;
+    position: absolute;
+    top: 80px;
+    left: 38%;
+    text-shadow: 2px 2px 10px white;
+}
+.pragraph {
+    color: black;
+    position: absolute;
+    top: 300px;
+    background-color: rgba(255, 248, 248, 0.61);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.527);
+    width: 80%;
+    left: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 25px;
+}

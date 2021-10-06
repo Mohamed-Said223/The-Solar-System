@@ -1,0 +1,133 @@
+body{
+background-image: url(image/Transition-Space-iphone-wallpape.png);
+background-size: cover;
+}
+
+.title{
+    font-size: 300%;
+    color: rgb(15, 135, 204);
+    margin: 0 0 0 37%;
+    
+}
+table{
+    border-spacing: 0;
+}
+td img{
+    width: 50%;
+}
+td{
+    color: white;
+    padding: 2%;
+    font-size: 100%;
+    width: 30%;
+}
+.s1{
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+.s{
+    color: rgb(0, 183, 255);
+    padding-left: 40%;
+    font-size: 300%;
+}
+span{
+    margin: 50px;
+}
+.border{
+    padding: 60px 100px;
+    z-index: -1;
+    border: 10px solid rgb(0, 183, 255);
+    position: absolute;
+    top: 8%;
+    left: 3%;
+}
+h3{
+    color: aqua;
+}
+.container{
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .box{
+    text-align: center;
+    margin-left: 10%;
+
+}
+.container .box .icon a{
+    font-size: 25px;
+    cursor: pointer;
+    height: 40px;
+	width: 100px;
+    padding: 7%;
+    color: rgb(15, 135, 204);
+}
+.container .box .icon h5,
+.container .box .icon h6{
+    position: relative;
+    overflow: hidden;
+    font-weight: 400;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 16px;
+    transition-delay: 0.3s;
+    color: transparent;
+    
+}
+.container .box a:hover ~ h5,
+.container .box a:hover ~ h6{
+    color:#fff;
+}
+.container .box .icon h6{
+    font-weight: 600;
+    margin: 5px 0;
+    font-style: 90px;
+}
+.container .box .icon h5::before,
+.container .box .icon h6::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #00bcd4;
+    transition: 1s;
+}
+.container .box .icon h6::before{
+    left: initial;
+    right: 100%;
+    background-color: rgb(15, 135, 204);
+}
+.container .box a:hover ~ h5::before{
+    left: -100%;
+}
+.container .box a:hover ~ h6::before{
+    left: initial;
+    right: -100%;
+}
+.fa-check-circle:before {
+    font-size: 10px;
+}
+.back{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.678);
+    border-radius: 30px;
+    padding: 0 30px;
+}
+.back:hover{
+    background:white;
+    color:rgb(0, 0, 0);
+    box-shadow:0 0 30px white;
+}

@@ -1,0 +1,444 @@
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(image/WhatsApp\ Image\ 2021-05-05\ at\ 11.07.36\ PM.jpeg);
+  background-size:cover;
+  background-attachment: fixed;
+}
+::selection{
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.home ,.stars ,.planets ,.moons ,.asteroids {
+  background-color:  rgba(128, 128, 128, 0.678);
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  position: absolute ;
+  font-size: 150%;
+  width: 10%;
+  text-align: center;
+}
+.stars:hover ,.planets:hover ,.moons:hover ,.asteroids:hover {
+background-color: white;
+color: black;
+box-shadow: 0 0 30px white;
+}
+.home{
+  right: 45%;
+  top: 5%;
+  background: white;
+  color: black;
+  box-shadow: 0 0 30px white;
+}
+.stars{
+  right: 34%;
+  top: 5%;
+} 
+.planets{
+  right: 23%;
+  top: 5%;
+}
+.moons{
+  right:12%;
+  top: 5%;
+} 
+.asteroids{
+  right: 1%;
+  top: 5%;
+} 
+
+.about , .login{
+  background-color:dodgerblue;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  font-size: 150%;
+  width: 10%;
+  text-align: center;
+  right: 89.5%;
+}
+.about:hover , .login:hover,.sources:hover{
+  box-shadow: 0 0 30px white;
+}
+.about{
+  top: 58px;
+}
+.login{
+  top: 15px;
+}
+.sources{
+  top: 101px;
+  background-color:dodgerblue;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+  position: absolute;
+  font-size: 150%;
+  width: 10%;
+  text-align: center;
+  right: 89.5%;
+}
+
+.addres{
+  font-size: 80px;
+  position: absolute;
+  top: 50px;
+  left: 25%;
+  text-shadow: 2px 2px 10px rgb(252, 114, 11);
+}
+.pragraph{
+  color: black;
+  position: absolute;
+  top: 300px;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 80%;
+  left: 10%;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 25px;
+}
+.tabel_1{
+  position: absolute;
+  border: 2px solid black;
+  top: 1700px;
+  color: black;
+  position: absolute;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 40%;
+  left: 10%;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+.tabel_1 td{
+  border-bottom:2px solid rgb(83, 82, 82) ;
+  padding: 10px;
+
+}
+.tabel_2{
+  position: absolute;
+  border: 2px solid black;
+  top: 2130px;
+  color: black;
+  position: absolute;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 40%;
+  left: 50%;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+.tabel_2 td{
+  border-bottom:2px solid rgb(83, 82, 82) ;
+  padding: 10px;
+
+}
+.tabel_3{
+  position: absolute;
+  border: 2px solid black;
+  top: 2635px;
+  color: black;
+  position: absolute;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 40%;
+  left: 10%;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+.tabel_3 td{
+  border-bottom:2px solid rgb(83, 82, 82) ;
+  padding: 10px;
+
+}
+.tabel_4{
+  position: absolute;
+  border: 2px solid black;
+  top: 2860px;
+  color: black;
+  position: absolute;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 40%;
+  left: 50%;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+.tabel_4 td{
+  border-bottom:2px solid rgb(83, 82, 82) ;
+  padding: 10px;
+
+}
+.td{
+  color: darkblue !important; 
+  font-weight: bold;
+}
+.td2{
+  color: darkblue;
+  border-bottom: none !important;
+  font-weight: bold;
+}
+.td3{
+  color: #000 !important;
+  border-bottom: none !important;
+}
+th ,.th{
+  color: darkred;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 25px;
+  border-bottom:2px solid rgb(54, 54, 54) ;
+}
+.box1{
+  position: absolute;
+  width: 40%;
+  height: 400px;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  border-radius: 20px;
+  top: 3800px;
+  right: 5%;
+}
+
+.content1{
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  color: black;
+  padding: 20px;
+  font-family: consolas;
+  text-align: center;
+}
+.content1:hover img{
+      -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}
+.content1 a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: white;
+  transition: 0.5s;
+  font-size: 150%;
+  background-color: rgba(128, 128, 128, 0.678);
+}
+.content1 a:hover{
+  background: white;
+  color: black;
+  box-shadow: 0 0 30px white;
+}
+.box1 img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+object-fit: cover;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+transition: 1s;
+/* transition-delay:2s ; */
+}
+.box1 .content1 img:hover{
+  -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}
+.box2{
+  position: absolute;
+  width: 40%;
+  height: 400px;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  border-radius: 20px;
+  top: 3800px;
+  right: 55%;
+}
+
+.content2{
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  color: black;
+  padding: 20px;
+  font-family: consolas;
+  text-align: center;
+}
+.content2:hover img{
+      -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}
+.content2 a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: white;
+  transition: 0.5s;
+  font-size: 150%;
+  background-color: rgba(128, 128, 128, 0.678);
+}
+.content2 a:hover{
+  background: white;
+  color: black;
+  box-shadow: 0 0 30px white;
+}
+.box2 img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+object-fit: cover;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+transition: 1s;
+/* transition-delay:2s ; */
+}
+.box2 .content2 img:hover{
+  -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}
+.box3{
+  position: absolute;
+  width: 40%;
+  height: 400px;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  border-radius: 20px;
+  top: 4250px;
+  right: 5%;
+}
+
+.content3{
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  color: black;
+  padding: 20px;
+  font-family: consolas;
+  text-align: center;
+}
+.content3:hover img{
+      -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}
+.content3 a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: white;
+  transition: 0.5s;
+  font-size: 150%;
+  background-color: rgba(128, 128, 128, 0.678);
+}
+.content3 a:hover{
+  background: white;
+  color: black;
+  box-shadow: 0 0 30px white;
+}
+.box3 img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+object-fit: cover;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+transition: 1s;
+/* transition-delay:2s ; */
+}
+.box3 .content3 img:hover{
+  -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}
+.box4{
+  position: absolute;
+  width: 40%;
+  height: 400px;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  border-radius: 20px;
+  top: 4250px;
+  right: 55%;
+}
+
+.content4{
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  align-items: center;
+  color: black;
+  padding: 20px;
+  font-family: consolas;
+  text-align: center;
+}
+.content4:hover img{
+      -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}
+.content4 a{
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  color: white;
+  transition: 0.5s;
+  font-size: 150%;
+  background-color: rgba(128, 128, 128, 0.678);
+}
+.content4 a:hover{
+  background: white;
+  color: black;
+  box-shadow: 0 0 30px white;
+}
+.box4 img{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 20px;
+object-fit: cover;
+-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+transition: 1s;
+/* transition-delay:2s ; */
+}
+.box4 .content4 img:hover{
+  -webkit-clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+clip-path: polygon(0 0, 100% 0, 0% 0%, 0% 100%);
+}

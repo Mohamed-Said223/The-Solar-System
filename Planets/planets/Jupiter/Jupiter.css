@@ -1,0 +1,204 @@
+:root {
+  --jupiter-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/332937/jupiter.jpg);
+  --jupiter-tilt: rotate(3.1deg);
+  --jupiter-day: 9.9;
+  --jupiter-color: #c9b5a4;
+}
+@keyframes planetRotate {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+body {
+  background-image: url(image/WhatsApp\ Image\ 2021-05-06\ at\ 7.46.02\ PM.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 190px);
+}
+::selection{
+  color: yellow;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.addres {
+  font-size: 80px;
+  position: absolute;
+  left: 40%;
+  top: -60px;
+  text-shadow: 2px 2px 20px rgb(255, 255, 255);
+}
+.pragraph {
+  color: black;
+  position: absolute;
+  top: 200px;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 80%;
+  left: 10%;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 25px;
+}
+.table1 {
+  position: absolute;
+  border: 2px solid black;
+  top: 1100px;
+  color: black;
+  position: absolute;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 40%;
+  left: 10%;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+.table1 td {
+  border-bottom: 2px solid rgb(83, 82, 82);
+  padding: 10px;
+}
+.table2 {
+  position: absolute;
+  border: 2px solid black;
+  top: 1250px;
+  color: black;
+  position: absolute;
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  width: 40%;
+  left: 55%;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 20px;
+}
+.table2 td {
+  border-bottom: 2px solid rgb(83, 82, 82);
+  padding: 10px;
+}
+.td {
+  color: darkblue !important;
+  font-weight: bold;
+}
+.td2 {
+  color: darkblue;
+  border-bottom: none !important;
+  font-weight: bold;
+}
+.td3 {
+  color: #000 !important;
+  border-bottom: none !important;
+}
+th {
+  color: darkred;
+  font-weight: bold;
+  text-transform: capitalize;
+  font-size: 25px;
+  border-bottom: 2px solid rgb(54, 54, 54);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 1750px;
+  left: 65%;
+}
+.card--jupiter .planet__atmosphere {
+  box-shadow: inset 10px 0px 12px -2px rgba(255, 255, 255, 0.2),
+    inset -70px 0px 50px 0px black, -5px 0px 10px -4px var(--jupiter-color);
+}
+.card--jupiter .planet__surface {
+  background-image: var(--jupiter-image);
+  transform: var(--jupiter-tilt) scale(1.2);
+  animation: planetRotate calc(var(--jupiter-day) * 0.1s) linear infinite;
+}
+.card--jupiter .card__planet::before {
+  transform: var(--jupiter-tilt) scale(1.2);
+  border-color: var(--jupiter-color);
+  color: var(--jupiter-color);
+}
+.card--jupiter .tilt__icon {
+  transform: var(--jupiter-tilt);
+  color: var(--jupiter-color);
+}
+.card__planet::before {
+  content: "";
+  position: absolute;
+  height: 190px;
+  z-index: -2;
+  left: 50%;
+  top: 0%;
+  border-left: 1px dashed rgba(255, 255, 255, 0.25);
+}
+
+.planet__atmosphere {
+  height: 190px;
+  width: 190px;
+  position: relative;
+  background: radial-gradient(
+    circle at 30% 50%,
+    rgba(255, 255, 255, 0.3) 0%,
+    rgba(255, 255, 255, 0) 65%
+  );
+  border-radius: 100px;
+  overflow: hidden;
+}
+.planet__surface {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-size: cover;
+}
+
+.card__info {
+  width: 100%;
+}
+
+.info__title {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+}
+.info__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info__item {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #fff;
+}
+.info__item .tilt__icon {
+  margin: 0 5px;
+}
+.info__label {
+  font-size: 20px;
+  font-weight: bolder;
+  color: #fff;
+}
+.info__line {
+  flex: 1;
+  margin: 0 5px;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.3);
+}
+.audio {
+  background-color: rgba(255, 248, 248, 0.61);
+  box-shadow: 0 0 40px black;
+  border-radius: 20px;
+  position: absolute;
+  top: 1100px;
+  left: 55%;
+  text-align: center;
+  font-weight: bolder;
+  font-family: Algerian;
+  width: 40%;
+  color: darkred;
+  border: #000 solid 2px;
+}

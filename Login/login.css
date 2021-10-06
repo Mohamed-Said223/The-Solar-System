@@ -1,0 +1,292 @@
+body{
+    background-image: url(image/3.jpeg);
+    background-size: cover; 
+}
+form{
+    text-align: center;
+    top: 144px;
+    position: relative;
+    box-shadow: 0 0 50px #000;
+    padding: 30px;
+    margin-left:30% ;
+    margin-right: 30%;
+    /* background-color: #151515; */
+    background-image: url(image/1.jpeg);
+    border-radius: 10px;
+}
+.log{
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    left: 170px;
+    text-shadow:  0 0 20px #fff;
+}
+.name{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-top: 18%;
+}
+.name input[type="text"]{
+    position:absolute;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    box-shadow: none;
+    color: #fff;
+    width: 100%;
+    left: 0px;
+    height: 20px;
+}
+.name label{
+    position:absolute;
+    top: 0;
+    left: 0;
+    color: #555;
+    display: block;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.name input[type="text"]:focus + label,
+.name input[type="text"]:valid + label
+{
+    transform: translateY(-35px);
+    font-size: 16px;
+    color: #fff;
+    background: #00b0ff;
+    padding: 2px 6px;
+}
+.name span{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: #555;
+    width: 100%;
+    height: 1px;
+}
+.name span:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ff006a;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.5s ease-in-out;
+}
+.name input[type="text"]:focus ~ span:before,
+.name input[type="text"]:valid ~ span:before{
+    transform: scaleX(1);
+transform-origin: left;
+transition: transform 0.5s ease-in-out;
+}
+.email{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-top: 6%;
+}
+.email input[type="email"]{
+    position:absolute;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    box-shadow: none;
+    color: #fff;
+    width: 100%;
+    left: 0px;
+    height: 20px;
+}
+.email label{
+    position:absolute;
+    top: 0;
+    left: 0;
+    color: #555;
+    display: block;
+    transition: 0.5s;
+    font-size: 20px;
+
+}
+.email input[type="email"]:focus + label,
+.email input[type="email"]:valid + label
+{
+    transform: translateY(-35px);
+    font-size: 16px;
+    color: #fff;
+    background: #00b0ff;
+    padding: 2px 6px;
+}
+.email span{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: #555;
+    width: 100%;
+    height: 1px;
+}
+.email span:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ff006a;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.5s ease-in-out;
+}
+.email input[type="email"]:focus ~ span:before,
+.email input[type="email"]:valid ~ span:before{
+    transform: scaleX(1);
+transform-origin: left;
+transition: transform 0.5s ease-in-out;
+}
+.password{
+    position: relative;
+    width: 100%;
+    height: 25px;
+    margin-top: 6%;
+}
+.password input[type="password"]{
+    position:absolute;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    box-shadow: none;
+    color: #fff;
+    width: 100%;
+    left: 0px;
+    height: 20px;
+}
+.password label{
+    position:absolute;
+    top: 0;
+    left: 0;
+    color: #555;
+    display: block;
+    transition: 0.5s;
+    font-size: 20px;
+}
+.password input[type="password"]:focus + label,
+.password input[type="password"]:valid + label
+{
+    transform: translateY(-35px);
+    font-size: 16px;
+    color: #fff;
+    background: #00b0ff;
+    padding: 2px 6px;
+}
+.password span{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    background: #555;
+    width: 100%;
+    height: 1px;
+}
+.password span:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ff006a;
+transform: scaleX(0);
+transform-origin: right;
+transition: transform 0.5s ease-in-out;
+}
+.password input[type="password"]:focus ~ span:before,
+.password input[type="password"]:valid ~ span:before{
+    transform: scaleX(1);
+transform-origin: left;
+transition: transform 0.5s ease-in-out;
+}
+.remamber{
+    color: #fff;
+    position: absolute;
+    left: 27px;
+    top: 250px;
+    font-size: 15px;
+}
+.forget{
+    position: absolute;
+    
+    color: #fff;
+    top: 250px;
+    left: 260px;
+}
+.kind{
+    display: inline-block;
+    font-size: 20px;
+    margin: 5px;
+    color: #fff;
+}
+.kind p{
+    color: #ff006a;
+}
+.login , .reset{
+    display: inline-block;
+}
+.login ,.reset{
+margin-top: 10px;
+border: none;
+border-radius: 15px;
+box-shadow: none;
+padding: 7px 15px;
+background: #333;
+color: #fff;
+font-size: 20px;
+cursor: pointer;
+margin: 4%;
+}
+.login:hover
+,.reset:hover {
+background: #00bcd4;
+box-shadow: 0px 0px 30px #00b0ff ;
+}
+
+hr{
+    color: #555;
+    size: 80%;
+}
+
+.facebook{
+    color: #fff;
+    text-decoration: none;
+    background:#0019f7;
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    font-size: 17.5px;
+    border-radius: 30px;
+}
+.facebook:hover{
+    box-shadow: 0 0 30px #0000ff;
+}
+.back{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-weight: bolder;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.678);
+    border-radius: 30px;
+    padding: 0 30px;
+}
+.back:hover{
+    background:white;
+    color:black;
+    box-shadow:0 0 30px white;
+}
+
+

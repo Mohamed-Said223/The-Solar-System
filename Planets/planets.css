@@ -1,0 +1,661 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-image: url(image/Night-Sky-Planets-Jupiter-Mercur.png);
+    background-size: cover;
+}
+::selection{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+* {
+    box-sizing: border-box;
+}
+.home,
+.stars,
+.planets,
+.moons,
+.asteroids {
+    background-color: rgba(128, 128, 128, 0.678);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 150%;
+    width: 10%;
+    text-align: center;
+}
+.home:hover,
+.stars:hover,
+.moons:hover,
+.asteroids:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
+.home {
+    right: 45%;
+    top: 5%;
+
+}
+.stars {
+    right: 34%;
+    top: 5%;
+
+}
+.planets {
+    right: 23%;
+    top: 5%;
+    background: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
+.moons {
+    right: 12%;
+    top: 5%;
+}
+.asteroids {
+    right: 1%;
+    top: 5%;
+}
+
+.addres {
+    font-size: 80px;
+    position: absolute;
+    top: 80px;
+    left: 38%;
+    text-shadow: 2px 2px 10px rgb(255, 255, 255);
+}
+.pragraph {
+    color: black;
+    position: absolute;
+    top: 300px;
+    background-color: rgba(255, 248, 248, 0.61);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.527);
+    width: 80%;
+    left: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+h1 {
+    font-size: 2.2em;
+}
+.planets1{
+    position: absolute;
+    top:1850px;
+    left: 37%;
+    font-size: 45px;
+    text-shadow: 2px 2px 10px white;
+}
+/* planet 1 */
+.flip1 {
+    position: absolute;
+    top:1800px;
+    left:165%;
+}
+.flip1 > .front,
+.flip1 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip1 > .front {
+    transform: rotateY(0deg);
+}
+.flip1 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip1:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip1:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip1 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip1 > .front,
+.flip1 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip1 > .front p,
+.flip1 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+/* planet 1 */
+.flip2 {
+    position: absolute;
+    top:1800px;
+    left:80%;
+}
+.flip2 > .front,
+.flip2 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip2 > .front {
+    transform: rotateY(0deg);
+}
+.flip2 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip2:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip2:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip2 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip2 > .front,
+.flip2 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip2 > .front p,
+.flip2 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+/* planet 1 */
+.flip3 {
+    position: absolute;
+    top:2100px;
+    left:84%;
+}
+.flip3 > .front,
+.flip3 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip3 > .front {
+    transform: rotateY(0deg);
+}
+.flip3 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip3:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip3:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip3 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip3 > .front,
+.flip3 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip3 > .front p,
+.flip3 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+/* planet 1 */
+.flip4 {
+    position: absolute;
+    top:2100px;
+    left:-1%;
+}
+.flip4 > .front,
+.flip4 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip4 > .front {
+    transform: rotateY(0deg);
+}
+.flip4 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip4:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip4:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip4 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip4 > .front,
+.flip4 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip4 > .front p,
+.flip4 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+.planets2{
+    position: absolute;
+    top:2550px;
+    left: 37%;
+    font-size: 45px;
+    text-shadow: 2px 2px 10px white;
+}
+/* planet 1 */
+.flip5 {
+    position: absolute;
+    top:2460px;
+    left:3%;
+}
+.flip5 > .front,
+.flip5 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip5 > .front {
+    transform: rotateY(0deg);
+}
+.flip5 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip5:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip5:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip5 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip5 > .front,
+.flip5 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip5 > .front p,
+.flip5 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+/* planet 1 */
+.flip6 {
+    position: absolute;
+    top:2460px;
+    left:-82%;
+}
+.flip6 > .front,
+.flip6 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip6 > .front {
+    transform: rotateY(0deg);
+}
+.flip6 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip6:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip6:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip6 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip6 > .front,
+.flip6 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip6 > .front p,
+.flip6 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+/* planet 1 */
+.flip7 {
+    position: absolute;
+    top:2760px;
+    left:-78%;
+}
+.flip7 > .front,
+.flip7 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip7 > .front {
+    transform: rotateY(0deg);
+}
+.flip7 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip7:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip7:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip7 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip7 > .front,
+.flip7 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip7 > .front p,
+.flip7 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+/* planet 1 */
+.flip8 {
+    position: absolute;
+    top:2760px;
+    left:-163%;
+}
+.flip8 > .front,
+.flip8 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip8 > .front {
+    transform: rotateY(0deg);
+}
+.flip8 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip8:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip8:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip8 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip8 > .front,
+.flip8 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 220px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip8 > .front p,
+.flip8 > .back p {
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+.more{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 220px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s;
+    font-size: 120%;
+    background-color: rgba(128, 128, 128, 0.678);
+    position: absolute;
+    bottom: 10px;
+}
+.more:hover{
+    background: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
+.planet{
+    color: rgb(255, 0, 0);
+}
+.planet_style{
+    font-size: 20px !important;
+}

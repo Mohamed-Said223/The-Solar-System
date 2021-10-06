@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login page</title>
+        <link href="login.css" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="../logo.png">
+    </head>
+    <body>
+    <form>
+        <div class="log">Log In</div>
+        <div class="name">
+            <input type="text" required  name="user name" >
+            <label>Username</label>
+            <span></span>
+        </div>
+        
+        <br>
+        <div class="email">
+            
+            <input type="email" required name="mail">
+            <label>Email</label>
+            <span></span>
+        </div>
+        <br>
+        <div class="password">
+            
+            <input type="password" required name="pass" minlength="8" maxlength="20">
+            <label>Password</label>
+            <span></span>
+        </div>
+        <div class="remamber">
+        <input type="checkbox" id="remamber"  name="remamber" value="remamber" >
+        <label for="remamber">Remamber Me</label>            
+        </div>
+
+        <a class="forget" href="#">forget.password?</a>
+        <br>
+        <div class="kind">
+            <p>Kind: </p>
+        </div>
+        <div class="kind">
+            <input id="Male" type="radio" name="Kind" value="Male" checked>
+            <label for="Male">Male</label>
+        </div>
+        <div class="kind">
+            <input id="Female" type="radio" name="Kind" value="Female">
+            <label for="Female">Female</label>
+        </div>
+        <br>
+        
+        <input type="submit" value="log in"class="login">
+        <input type="reset" value="reset"class="reset">
+        <hr>
+        <a  class="facebook" href="www.facebook.com">facebook</a>
+    </form>
+    
+    <a href="../Home/Home.html" class="back">Back</a>    
+    
+    </body>
+</html>

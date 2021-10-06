@@ -1,0 +1,236 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-image: url(image/WhatsApp\ Image\ 2021-05-06\ at\ 7.46.03\ PM\ \(6\).jpeg);
+    background-size: cover;
+}
+::selection{
+    color: yellow;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+* {
+    box-sizing: border-box;
+}
+.home,
+.stars,
+.planets,
+.moons,
+.asteroids {
+    background-color: rgba(128, 128, 128, 0.678);
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    font-size: 150%;
+    width: 10%;
+    text-align: center;
+}
+.home:hover,
+.stars:hover,
+.moons:hover,
+.planets:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
+.home {
+    right: 45%;
+    top: 5%;
+
+}
+.stars {
+    right: 34%;
+    top: 5%;
+
+}
+.planets {
+    right: 23%;
+    top: 5%;
+
+}
+.moons {
+    right: 12%;
+    top: 5%;
+}
+.asteroids {
+    right: 1%;
+    top: 5%;
+    background: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
+
+.addres {
+    font-size: 80px;
+    position: absolute;
+    top: 80px;
+    left: 38%;
+    text-shadow: 2px 2px 10px white;
+}
+.pragraph {
+    color: black;
+    position: absolute;
+    top: 300px;
+    background-color: rgba(255, 248, 248, 0.61);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.527);
+    width: 80%;
+    left: 10%;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+.flip1 {
+    position: absolute;
+    top:500px;
+    left:0%;
+}
+.flip1 > .front,
+.flip1 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip1 > .front {
+    transform: rotateY(0deg);
+}
+.flip1 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip1:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip1:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip1 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip1 > .front,
+.flip1 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 380px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip1 > .front p,
+.flip1 > .back p {
+    font-size: 1rem;
+    line-height: 160%;
+    color: #ffffff;
+}
+
+.flip2 {
+    position: absolute;
+    top:500px;
+    left:5%;
+}
+.flip2 > .front,
+.flip2 > .back {
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+}
+.flip2 > .front {
+    transform: rotateY(0deg);
+}
+.flip2 > .back {
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: rotateY(-180deg);
+}
+.flip2:hover > .front {
+    transform: rotateY(180deg);
+}
+.flip2:hover > .back {
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip.flip-vertical > .back {
+    transform: rotateX(-180deg);
+}
+.flip.flip-vertical:hover > .front {
+    transform: rotateX(180deg);
+}
+.flip.flip-vertical:hover > .back {
+    transform: rotateX(0deg);
+}
+
+.flip2 {
+    position: relative;
+    display: inline-block;
+    margin-right: 2px;
+    margin-bottom: 1em;
+    width: 400px;
+}
+.flip2 > .front,
+.flip2 > .back {
+    display: block;
+    color: white;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 380px;
+    padding: 1em 2em;
+    background: #313131;
+    border-radius: 10px;
+}
+.flip2 > .front p,
+.flip2 > .back p {
+    font-size: 1rem;
+    line-height: 160%;
+    color: #fff;
+}
+.more{
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 220px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    transition: 0.5s;
+    font-size: 120%;
+    background-color: rgba(128, 128, 128, 0.678);
+    position: absolute;
+    bottom: 0px;
+}
+.more:hover{
+    background: white;
+    color: black;
+    box-shadow: 0 0 30px white;
+}
